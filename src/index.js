@@ -1,6 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client"; // Use React 18's createRoot
 import App from "./App";
 import "tailwindcss/tailwind.css";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
+

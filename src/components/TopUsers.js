@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchData } from "../api/fetchData";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "./ui/card";
 
 const TopUsers = () => {
   const [users, setUsers] = useState([]);
