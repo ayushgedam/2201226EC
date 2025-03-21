@@ -7,7 +7,7 @@ const Feed = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      fetchData("feed").then(data => setPosts(data || []));
+      fetchData("posts").then(data => setPosts(data || []));
     }, 5000);
     return () => clearInterval(interval);
   }, []);
